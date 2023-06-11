@@ -1,0 +1,46 @@
+body {
+    --main-green: #4f674f;
+    --white: #eeebe7;
+    background-color: var(--main-green);
+    color: var(--white);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* Set height to be the viewport so that footer will be at bottom of screen */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}   
+
+h1 {
+    padding-left: 5%;
+    margin-top: 100px;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 10%;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--white);
+    font-style: italic;
+}
+
+footer {
+    padding-left: 5%;
+    padding-bottom: 20px;
+    /* Force footer to bottom of screen */
+    margin-top: auto; 
+}

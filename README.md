@@ -1,6 +1,6 @@
 # Amanda Yee - Personal Portfolio
 
-Final term project for CS601 Web Application Development at Boston University. 
+Final term project for CS601 Web Application Development at Boston University. Summer 1 semester 2023.
 
 ## Project goal
 
