@@ -79,7 +79,7 @@ h2 {
     padding-left: 10%;
 }
 
-.about, .hobbies, .experience {
+.about, .hobbies, .experience, .skills {
     background-color: var(--light-green);
     color: black;
     border: 2px solid var(--dark-green);
@@ -89,12 +89,22 @@ h2 {
     margin: 20px 10%;
 }
 
-/* .about h2, .hobbies h2, .hobbies a {
-    color: var(--dark-green)
-} */
-
 section > h2, .hobbies a {
     color: var(--dark-green)
+}
+
+/*********** Work experience ***********/ 
+#siriusxm, #quantium {
+    display: flex;
+    align-items: center;
+}
+
+#siriusxm a, #quantium a {
+    padding-right: 15px;
+}
+
+.experience ul {
+    margin-top: 0;
 }
 
 /*********** Contact form ***********/ 
