@@ -1,6 +1,8 @@
 /*********** General ***********/
 body {
     --main-green: #4f674f;
+    --dark-green: #2f3d2f;
+    --light-green: #a7b3a7;
     --white: #F5F5F5;
     background-color: var(--main-green);
     color: var(--white);
@@ -49,7 +51,7 @@ footer {
 }
 
 /*********** General ***********/
-.about, .experience, .skills  {
+.about, .experience, .skills {
     padding: 0 10%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -72,3 +74,62 @@ h2 {
     margin-top: 50px;
 }
 
+#contact {
+    padding-left: 10%;
+}
+
+/* Contact form */
+#contact-text, #name-error, #email-error, #message-error {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    /* text-align: left; */
+    background-color: var(--white);
+    color: var(--dark-green);
+    width: 435px;
+    padding: 10px;
+    border: 2px solid var(--dark-green);
+    border-radius: 10px;
+    box-shadow: 5px 8px;
+}
+
+.text-label {
+    width: 75px;
+    display: inline-block; /* Ensures the label width is respected */
+    font-style: italic;
+    font-weight: bold; 
+}
+
+.form-inputs {
+    padding-bottom: 10px;
+}
+
+#name-error, #email-error, #message-error {
+    color: darkred;
+    font-style: italic;
+    font-size: smaller;
+}
+
+#name, #email, #message, #submit-button {
+    width: 300px;
+}
+
+#message {
+    height: 150px;
+}
+
+#submit-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid var(--dark-green);
+    background-color: var(--light-green);
+    border-radius: 5px;
+    font-size: 1.05em;
+    padding: 3px 0; 
+}
+
+#submit-button:hover {
+    /* border: 1px solid var(--dark-blue); */
+    background-color: var(--dark-green);
+    color: var(--white);
+}
