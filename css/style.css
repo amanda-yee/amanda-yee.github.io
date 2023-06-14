@@ -78,13 +78,12 @@ h2 {
     padding-left: 10%;
 }
 
-/* Contact form */
+/*********** Contact form ***********/ 
 #contact-text, #name-error, #email-error, #message-error {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
-    /* text-align: left; */
     background-color: var(--white);
     color: var(--dark-green);
     width: 435px;
@@ -129,7 +128,6 @@ form {
 }
 
 #submit-button:hover {
-    /* border: 1px solid var(--dark-blue); */
     background-color: var(--dark-green);
     color: var(--white);
 }
