@@ -2,7 +2,7 @@
 body {
     --main-green: #4f674f;
     --dark-green: #2f3d2f;
-    --light-green: #a7b3a7;
+    --light-green: #b8c2b8;
     --white: #F5F5F5;
     background-color: var(--main-green);
     color: var(--white);
@@ -51,7 +51,7 @@ footer {
 }
 
 /*********** General ***********/
-.about, .experience, .skills {
+section {
     padding: 0 10%;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,14 +68,33 @@ footer {
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
-.about {
-    margin-top: 50px;
+.hobbies, .experience {
+    margin-top: 45px;
 }
 
 #contact {
     padding-left: 10%;
+}
+
+.about, .hobbies, .experience {
+    background-color: var(--light-green);
+    color: black;
+    border: 2px solid var(--dark-green);
+    border-radius: 10px;
+    box-shadow: 5px 8px var(--dark-green);
+    padding: 1px 15px;
+    margin: 20px 10%;
+}
+
+/* .about h2, .hobbies h2, .hobbies a {
+    color: var(--dark-green)
+} */
+
+section > h2, .hobbies a {
+    color: var(--dark-green)
 }
 
 /*********** Contact form ***********/ 
@@ -84,13 +103,13 @@ h2 {
 }
 
 form {
-    background-color: var(--white);
+    background-color: var(--light-green);
     color: var(--dark-green);
     width: 435px;
     padding: 10px;
     border: 2px solid var(--dark-green);
     border-radius: 10px;
-    box-shadow: 5px 8px;
+    box-shadow: 5px 8px var(--dark-green);
 }
 
 .text-label {
@@ -120,14 +139,21 @@ form {
 
 #submit-button {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid var(--dark-green);
-    background-color: var(--light-green);
+    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: white;   
     border-radius: 5px;
     font-size: 1.05em;
     padding: 3px 0; 
 }
 
 #submit-button:hover {
-    background-color: var(--dark-green);
-    color: var(--white);
+    background-color: var(--white);
+    color: black;
+}
+
+#linkedin-img {
+    float: left;
+    margin-right: 5px;
+    height: 20px;
 }
