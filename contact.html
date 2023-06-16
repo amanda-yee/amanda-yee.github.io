@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Amanda Yee</title>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/contact_form.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> /
+                <li><a href="about.html">About</a></li> / 
+                <li><a href="work.html">Work</a></li> / 
+                <li><a href="travel.html">Travel</a></li> / 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Contact me</h2>
+            <p id="contact-text">Please fill out the below. Expect a response within 48 hours.</p>
+        </section>
+        <div id="contact-form">
+            <form name="contact-form" novalidate onsubmit="return validateForm();">
+                <div class="form-inputs">
+                    <label class="text-label" for="firstName">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <div id ="name-error"></div>
+                </div>
+
+                <div class="form-inputs">
+                    <label class="text-label" for="firstName">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <div id ="email-error"></div>
+                </div>
+
+                <div class="form-inputs">
+                    <label class="text-label" for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <div id ="message-error"></div>
+                </div>
+                <div>
+                    <input type="submit" id="submit-button" name="submitButton" value="Send">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Amanda Yee 
+    </footer>
 </body>
 </html>
