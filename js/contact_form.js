@@ -25,6 +25,7 @@ function validateForm() {
         document.getElementById('name-error').innerHTML = "Name must only contain letters of the alphabet (a-z, A-Z).";
         name.classList.add("error");
         errorCount += 1;
+        // BUG FIX: User should be able to have spaces
     } else {
         name.classList.remove("error");
     }

@@ -62,8 +62,7 @@ a {
     font-style: italic;
 }
 
-.media-container {
-    padding: 0 10%;
+.media-container, .skills-container, .trip-container {
     display: flex;
     justify-content: space-between;
 }
@@ -76,13 +75,16 @@ a {
     padding-left: 10%;
 }
 
-.about, .hobbies, .experience, .skills {
+.about, .hobbies, .experience, .skills, .trip-text {
     background-color: var(--light-green);
     color: black;
     border: 2px solid var(--dark-green);
     border-radius: 10px;
     box-shadow: 5px 8px var(--dark-green);
-    padding: 1px 15px;
+    padding: 1px 15px;   
+}
+
+.about, .hobbies, .experience, .skills {
     margin: 20px 10%;
 }
 
@@ -105,11 +107,6 @@ a {
     margin-top: 0;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 #tech-skills, #gen-skills, #strengths {
     border: 2px solid var(--dark-green);
     border-radius: 10px; 
@@ -117,6 +114,36 @@ a {
     width: 400px;
     height: 200px;
     margin: 0 20px 15px 0;
+}
+
+/*********** Travel ***********/ 
+.trip-text {
+    width: 350px;
+}
+
+.trip-container {
+    margin-bottom: 30px;
+}
+
+table {
+    border: 2px solid var(--dark-green);
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td {
+    padding: 5px 5px;
+    width: 150px;
+    border: 1px solid var(--dark-green);    
+}
+
+#states-visited > p {
+    font-weight: bold;
+    font-style: italic;
+} 
+
+#click-button {
+    margin-bottom: 10px;
 }
 
 /*********** Contact form ***********/ 
@@ -151,7 +178,8 @@ form {
     font-size: smaller;
 }
 
-#name, #email, #message, #submit-button {
+#name, #email, #message, 
+#submit-button, #click-button {
     width: 300px;
 }
 
@@ -159,7 +187,7 @@ form {
     height: 150px;
 }
 
-#submit-button {
+#submit-button, #click-button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 2px solid var(--dark-green);
     background-color: var(--dark-green);
@@ -169,7 +197,7 @@ form {
     padding: 3px 0; 
 }
 
-#submit-button:hover {
+#submit-button:hover, #click-button:hover {
     background-color: var(--white);
     color: black;
 }
