@@ -1,7 +1,7 @@
-// Define constants
+// Define div tag
 const divStates = document.getElementById("states-visited")
 
-// Run Fetch API to retrieve data when button is clicked
+// Run function to create HTML code to append to div
 document.getElementById("click-button").onclick = function() {
     divStates.innerHTML = statesTableHTML()
 }
@@ -47,9 +47,6 @@ function statesTableHTML(){
     }
 
     tableHTML += '</tbody>';
-    // tableHTML += '<tfoot><tr>';
-    // tableHTML += `<td class="left" colspan="2">${visited.length} out of 50 states visited</td>`;
-    // tableHTML += '</tr></tfoot>';
     tableHTML +=  '</table>';
 
     tableHTML += `<p>${visited.length} out of 50 states visited so far!</p>`;

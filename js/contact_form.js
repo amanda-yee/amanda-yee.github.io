@@ -21,11 +21,10 @@ function validateForm() {
         document.getElementById('name-error').innerHTML = "Name must be at least two (2) characters.";
         name.classList.add("error");
         errorCount += 1;
-    } else if (!(/^[a-zA-Z]+$/.test(name.value))) {
+    } else if (!(/^[a-zA-Z\s]+$/.test(name.value))) {
         document.getElementById('name-error').innerHTML = "Name must only contain letters of the alphabet (a-z, A-Z).";
         name.classList.add("error");
         errorCount += 1;
-        // BUG FIX: User should be able to have spaces
     } else {
         name.classList.remove("error");
     }
