@@ -14,3 +14,11 @@ The goal of this project is to design and develop a personal portfolio website c
 - Document object model (DOM)
 - Website usability
 - Project management for web design and development
+
+## Project highlights
+
+There are a few features on my portfolio that I am proud of incorporating:
+1. The typewriter effect on the home page, implemented using JavaScript
+2. CSS Flex to make the web pages responsive
+3. Using JavaScript to create the HTML code for the US states table and including template strings from ES6
+4. A Vue.js application to change an image upon hover on the Travel page
