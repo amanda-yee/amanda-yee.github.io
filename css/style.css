@@ -260,4 +260,12 @@ form {
     td {
         flex-basis: 50%;
     }
+
+    .contact {
+        margin-left: 2%;
+    }
+    
+    #contact-form {
+        padding-left: 2%;
+    }
 }
