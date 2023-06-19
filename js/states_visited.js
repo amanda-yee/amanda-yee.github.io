@@ -36,12 +36,12 @@ function statesTableHTML(){
         } else {
             var img = "<img src='images/red-cross.png' alt='Red cross'>"
         }
-        console.log(i + usStates[i])
-        if ([0,5,10,15,20,25,30,35,40,45].includes(i)) {
+        // Make table 6 columns wide
+        if ([0,6,12,18,24,30,36,42,48].includes(i)) {
             tableHTML += '<tr>'
         }
         tableHTML += `<td>${img} ${usStates[i]}</td>`
-        if ([4,9,14,19,24,29,34,39,44].includes(i)) {
+        if ([5,11,17,23,29,35,41,47].includes(i)) {
             tableHTML += '</tr>'
         }
     }

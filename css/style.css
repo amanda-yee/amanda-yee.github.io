@@ -65,8 +65,14 @@ footer {
 /*********** Grouped containers ***********/
 .media-container, .skills-container, .trip-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.media-container > img, .media-container > video, 
+.trip-container > img {
+    margin-bottom: 10px;
+} 
 
 .hobbies, .experience {
     margin-top: 45px;
@@ -115,9 +121,8 @@ form, .trip-text {
     border: 2px solid var(--dark-green);
     border-radius: 10px; 
     background-color: var(--pale-green);
-    /* color: var(--white); */
     padding: 0 10px;
-    width: 400px;
+    width: 325px;
     height: 200px;
     margin: 0 20px 15px 0;
 }
@@ -130,6 +135,7 @@ form, .trip-text {
 /*********** Travel ***********/ 
 .trip-text {
     width: 350px;
+    margin-bottom: 10px;
 }
 
 .trip-container {
@@ -216,4 +222,50 @@ form {
 #submit-button:hover, #click-button:hover {
     background-color: var(--white);
     color: var(--dark-green);
+}
+
+@media screen and (max-width: 1190px) {
+    table {
+        display: block;
+      }
+      
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      td {
+        flex-basis: 30%;
+        width: 50%;
+      }
+}
+
+/*********** Changes based on screen width ***********/ 
+@media screen and (max-width: 1190px) {
+    table {
+        display: block;
+    }
+      
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    td {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    td {
+        flex-basis: 50%;
+    }
+
+    .contact {
+        margin-left: 2%;
+    }
+    
+    #contact-form {
+        padding-left: 2%;
+    }
 }
