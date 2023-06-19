@@ -17,8 +17,8 @@ The goal of this project is to design and develop a personal portfolio website c
 
 ## Project highlights
 
-There are a few features I would like to highlight that I am proud of:
+There are a few features on my portfolio that I am proud of incorporating:
 1. The typewriter effect on the home page, implemented using JavaScript
-2. Incorporation of CSS Flex to make the webpages responsive
-3. Using JavaScript to create the HTML code for the US States table and incoporating template strings from ES6
-4. Utilizng the Vue.js application to change an image upon hover on the Travel page
+2. CSS Flex to make the web pages responsive
+3. Using JavaScript to create the HTML code for the US states table and including template strings from ES6
+4. A Vue.js application to change an image upon hover on the Travel page
