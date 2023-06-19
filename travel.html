@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel | Amanda Yee</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0/vue.min.js" 
+    integrity="sha512-2v91ndX8jAw9J2IAZ4RnH+lKMOi0PzyFJ1i6D69Nx1RlY2UJpy6r1WIo35HrRkHG4ARj1Xl/xyoh0X9ze+6Y2w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/states_visited.js" defer></script>
+    <script src="js/travel_vue.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,6 +37,7 @@
             </p>
         </section>
 
+        <div id="vue-travel">
         <section class="trip-container">
             <div class="trip-text">
                 <h3>Panama</h3>
@@ -40,27 +45,44 @@
                         A recent trip that I really enjoyed was going to Panama in January this year.
                         I went with a friend over a long weekend and it was the perfect escape from the New York winter.
                         We spent majority of our time there relaxing on the beach in Contadora Island. This is one of my favorite pastimes, likely because I grew up in a beach town.
-                        We also visited the Panama Canal and got to see the changing of the locks which was cool to experience.
+                        We also visited the Panama Canal and got to see the changing of the locks which was cool to experience.<br><br>
+                        Hover over each photo to see another!
                     </p>
             </div>
-            <img src="images/hotel_mar_y_oro.jpg" alt="View from Hotel Mar Y Oro">
-            <img src="images/panama_canal.jpg" alt="Panama Canal">
+            <img v-bind:src="hoverImage1()" 
+                @mouseover="hover1=true" 
+                @mouseout="hover1=false"
+                alt="Contadora Island"/>
+
+            <img v-bind:src="hoverImage2()" 
+                @mouseover="hover2=true" 
+                @mouseout="hover2=false"
+                alt="Panama Canal"/>
         </section>
 
         <section class="trip-container">
             <div class="trip-text">
                 <h3>Utah</h3>
-                <p>
-                    I went to Utah in April 2021 to do a hiking trip for a friend's birthday. 
-                    It was very memorable and is one of my favorite trips that I have done so far in the US. 
-                    We did multiple hikes at Zion National Park (including Angel's Landing and the Narrows) and we also hiked at Bryce Canyon National Park. 
-                    These were two of the longest hikes I have done to date, with the round trips being 3 - 4 hours.
-                    In addition, a few of us also did mountain biking and rented out ATVs while in Utah which was so much fun!
-                </p>
+                    <p>
+                        I went to Utah in April 2021 to do a hiking trip for a friend's birthday. 
+                        It was very memorable and is one of my favorite trips that I have done so far in the US. 
+                        We did multiple hikes at Zion National Park (including Angel's Landing and the Narrows) and we also hiked at Bryce Canyon National Park. 
+                        These were two of the longest hikes I have done to date, with the round trips being 3 - 4 hours.
+                        In addition, a few of us also did mountain biking and rented out ATVs while in Utah which was a blast.<br><br>
+                        Hover over each photo to see another!
+                    </p>
             </div>
-            <img src="images/me_in_zion.jpg" alt="Me in front of Angel's Landing">
-            <img src="images/bryce_canyon.jpg" alt="Bryce Canyon">
+            <img v-bind:src="hoverImage3()" 
+                @mouseover="hover3=true" 
+                @mouseout="hover3=false"
+                alt="Zion National Park"/>
+
+            <img v-bind:src="hoverImage4()" 
+                @mouseover="hover4=true" 
+                @mouseout="hover4=false"
+                alt="Bryce Canyon National Park"/>
         </section>
+        </div>
 
         <section class="about">
             <h2>US States</h2>

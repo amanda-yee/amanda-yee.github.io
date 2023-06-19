@@ -11,6 +11,7 @@ const typeSentence = (divId, sentence, speed = 25) => {
     let timer = setInterval(function() {
       const char = sentence[index];
       
+      // Skips over the HTML tags so they render
       if (char === '<') {
         index = sentence.indexOf('>', index);  // skip to greater-than
       }
